@@ -1,0 +1,129 @@
+<html>
+<head>
+    <title>Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+<br>
+<section id="intro">
+    <div class="intro-container">
+        <h1>Raj Kukadia</h1>
+        <img src="profilepicture.JPG" alt="profile picture" style="width:250px;height:200px;">
+    </div>
+</section>
+<section id="collapse">
+    <button class="collapsible">Experience</button>
+    <div class="content">
+        <h4 style="color:white;">Intralinks</h4>
+        <h6 style="color:white;">Waltham, MA (Jan 2018 - Aug 2018)</h6>
+        <ul style="color:white;">
+            <li>Developed Node.js based scalable applications with RESTful API design for users of clients like Bank of America Merrill Lynch </li>
+            <li>Deployed Node.js applications on Apigee with features like Oauth 2.0, single sign on, throttling of API calls and security</li>
+            <li>Implemented a new feature called shared flow which improved the code management in the API team and deployed it using Grunt.js and contributed to Apigee’s open source project which has hundreds of weekly downloads <a href="https://github.com/rajkukadia/generator-apigee-deploy-grunt-api">GitHub repo</a></li>
+            <li>Implemented pagination of an API call that gets huge number of JSON documents to improve the performance by 10 seconds per call </ul>
+    <br>
+        <h4 style="color:white;">College of Computer and Information Science, Northeastern University</h4>
+        <h6 style="color:white;">Boston, MA (Jan 2018 - Aug 2018)</h6>
+        <ul style="color:white;">
+            <li>Worked on a storytelling, health and fitness android app which is connected to Fitbit and motivates the user to exercise</li>
+            <li>Designed the firebase database and API structure that can be used to efficiently store and retrieve user data like user’s current exercising task, the task period, number of steps completed and the story book status</li>
+            <li>Created multiple Java classes that syncs user data between shared preferences, REST server and firebase database</li>
+            <li>Developed an open source library that can be used for detailed user tracking using firebase in any android app </li>
+            <li><a href="https://github.com/rajkukadia/user_logging">GitHub repo</a></li>
+        </ul>
+    </div>
+    <button class="collapsible">Projects</button>
+    <div class="content">
+        <button class="collapsibleTwo">Android</button>
+        <div class="content">
+            <h4 style="color:white;"><a href="https://www.youtube.com/watch?v=-nfwx3pupZ0">Ping</a></h4>
+            <h5 style="color:white;">Northeastern University</h5>
+            <h6 style="color:white;">Boston, MA (Mar 2017 - Apr 2017)</h6>
+            <ul style="color:white;">
+                <li>Developed a notification based app using MVC architecture in which users can ping each other using double taps/voice</li>
+                <li>Created an algorithm using the google voice recognition library to improve its efficiency in resolving ambiguity between similar names</li>
+                <li>Features: displaying internet connectivity status, notifying about the ping status (sent and delivered), smart search to look up activities (keeping recently searched on top), invite friends, profile picture updating, sliding welcome screens, phone number verification</li>
+                <li><a href="https://github.com/rajkukadia/Ping-scroggle-android">GitHub repo</a></li>
+            </ul>
+            <iframe allowfullscreen
+                    src="https://www.youtube.com/embed/-nfwx3pupZ0">
+            </iframe>
+            <br>
+            <br>
+            <h4 style="color:white;"><a href="https://www.youtube.com/watch?v=1K1KsXqpf0Y">Scroggle</a></h4>
+            <h5 style="color:white;">Northeastern University</h5>
+            <h6 style="color:white;">Boston, MA (Jan 2017 - Mar 2017)</h6>
+            <ul style="color:white;">
+                <li>Implemented a multiplayer notification based asynchronous and synchronous gameplay using Firebase Cloud Messaging </li>
+                <li>Integrated Google sign in for user authentication and saved game state on any interruption</li>
+                <li>Created a user-friendly tutorial for users who open the app for the first time</li>
+                <li>Increased user friendliness by using accelerometer sensor to make the game playable from any side of the mobile</li>
+                <li><a href="https://github.com/rajkukadia/Ping-scroggle-android">GitHub repo</a></li>
+            </ul>
+            <iframe allowfullscreen
+                    src="https://www.youtube.com/embed/1K1KsXqpf0Y">
+            </iframe>
+        </div>
+        <button class="collapsibleTwo">Java</button>
+        <div class="content">
+            <h4 style="color:white;">Northeastern University</h4>
+            <h6 style="color:white;">Boston, MA (Mar 2017 - Apr 2017)</h6>
+            <ul style="color:white;">
+            </ul>
+        </div>
+    </div>
+    <button class="collapsible">Education</button>
+    <div class="content">
+        <h5 style="color:white;">Northeastern University, Boston, MA (Aug 2016 - Dec 2018)</h5>
+        <h6 style="color:white;">Masters of Science in Computer Systems and Telecommunication Networks (Concentration in Computer Science)</h6>
+        <p style="color:white;">Courses: Algorithms, Mobile Application Development, Web Development, Object Oriented Programming, Data Networks</p>
+        <br>
+        <h5 style="color:white;">Mumbai University, Mumbai, India (Aug 2011 - May 2015)</h5>
+        <h6 style="color:white;">Bachelor of Engineering in Electronics and Telecommunication Networks</h6>
+    </div>
+    <button class="collapsible">Skills</button>
+    <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+</section>
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+</script>
+
+<script>
+    var coll = document.getElementsByClassName("collapsibleTwo");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+</script>
+
+</body>
+</html>
