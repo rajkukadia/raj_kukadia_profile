@@ -8,8 +8,9 @@ img {
     margin: 0;
      height: 200px;
      color: white;
-     background: black;
+     background: white;
   }
+
 button:focus { outline:0 !important;
   outline: none;}
 iframe {
@@ -22,61 +23,59 @@ iframe {
 .profilepic{
   width:155px;
   height: 145px;
-  border:4px solid white;
+  border:2px solid black;
   border-radius: 50%;
-  box-shadow: 5px 3px #404040;
-;
+  box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.8), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .collapsible {
-  background-color: #404040;
-  color: white;
+  background-color: white;
+  color: black;
   cursor: pointer;
   padding: 18px;
   width: 100%;
-  border: none;
+  border: black;
   text-align: center;
-  outline: none;
+  outline: black;
   font-size: 25px;
-  text-shadow: 2px 1px #3333CC;
 }
 
 .collapsibleTwo {
-  background-color: #404040;
-  color: white;
+  background-color: white;
+  color: black;
   cursor: pointer;
   padding: 18px;
   width: 100%;
-  border: none;
+  border: black;
   text-align: center;
-  outline: none;
+  outline: black;
   font-size: 20px;
   font-style: italic;
-  text-shadow: 2px 1px #3333CC;
 }
 .active, .collapsibleTwo:hover {
-  background-color: #3333CC;
+  background-color: white;
   outline: none;
   border: none;
+  box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.8), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .active, .collapsible:hover {
-  background-color: #3333CC;
+  background-color: white;
   outline: none;
   border: none;
+  box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.8), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .content {
   padding: 0 18px;
   display: none;
   overflow: hidden;
-
-  background-color: black;
+  background-color: white;
 }
   #intro {
     width: 100%;
     height: 100vh;
     background-size: cover;
     position: relative;
-    background: black;
+    background: #303030;
   }
 
 
@@ -91,20 +90,19 @@ iframe {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  background: linear-gradient(#3333CC 80%, #6699CC);
+  background: white;
 }
 #intro h1 {
   margin: 30px 0 10px 0;
   font-size: 48px;
-  font-weight: 500;
+  font-weight: 300;
   line-height: 56px;
   text-transform: uppercase;
-  color: #fff;
-  text-shadow: 5px 3px #404040;
+  color: black;
 }
 
 #intro .btn-about {
-  font-family: "Poppins", sans-serif;
+  /*font-family: "Poppins", sans-serif;*/
   text-transform: uppercase;
   font-weight: 500;
   font-size: 16px;
@@ -114,8 +112,7 @@ iframe {
   border-radius: 50px;
   transition: 0.5s;
   margin: 10px;
-  border: 2px solid #fff;
-  color: #fff;
-  box-shadow: 5px 3px #404040;
-
+  border: 2px solid black;
+  color: black;
+  box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.8), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
 }
