@@ -1,10 +1,9 @@
-* {
-    box-sizing: border-box;
-  }
+/** {*/
+/*    box-sizing: border-box;*/
+/*  }*/
 img {
-  border-radius: 30%;
-  box-shadow: 3px 2px red;
 }
+
   body {
     margin: 0;
      height: 200px;
@@ -20,6 +19,13 @@ iframe {
   display: block;
 }
 
+.profilepic{
+
+  width:160px;
+  height: 140px;
+  border:4px solid white;
+  border-radius: 50%;
+}
 .collapsible {
   background-color: black;
   color: white;
@@ -30,7 +36,7 @@ iframe {
   text-align: center;
   outline: none;
   font-size: 25px;
-  text-shadow: 2px 2px red;
+  text-shadow: 2px 1px #3333CC;
 }
 
 .collapsibleTwo {
@@ -44,16 +50,16 @@ iframe {
   outline: none;
   font-size: 20px;
   font-style: italic;
-  text-shadow: 2px 1px red;
+  text-shadow: 2px 1px #3333CC;
 }
 .active, .collapsibleTwo:hover {
-  background-color: red;
+  background-color: #3333CC;
   outline: none;
   border: none;
 }
 
 .active, .collapsible:hover {
-  background-color: red;
+  background-color: #3333CC;
   outline: none;
   border: none;
 }
@@ -84,7 +90,7 @@ iframe {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  background: black;
+  background: linear-gradient(#3333CC 80%, #6699CC);
 }
 #intro h1 {
   margin: 30px 0 10px 0;
@@ -93,6 +99,6 @@ iframe {
   line-height: 56px;
   text-transform: uppercase;
   color: #fff;
-  text-shadow: 3px 2px red;
+  text-shadow: 6px 4px black;
 }
 

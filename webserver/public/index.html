@@ -8,31 +8,33 @@
 </head>
 <body>
 <br>
-<section id="intro">
+<section class= "fade-scroll" id="intro">
     <div class="intro-container">
+        <img  class = "profilepic" src="profilepicture.jpg" alt="profile picture" >
+        <br>
         <h1>Raj Kukadia</h1>
-        <img src="profilepicture.jpg" alt="profile picture" style="width:250px;height:200px;">
     </div>
 </section>
 <section id="collapse">
     <button class="collapsible">Experience</button>
-    <div class="content">
-        <h4 style="color:white;">Intralinks</h4>
+    <div class="content ">
+
+        <h4 style="color:white;">Software Developer Coop, Intralinks</h4>
         <h6 style="color:white;">Waltham, MA (Jan 2018 - Aug 2018)</h6>
         <ul style="color:white;">
             <li>Developed Node.js based scalable applications with RESTful API design for users of clients like Bank of America Merrill Lynch </li>
             <li>Deployed Node.js applications on Apigee with features like Oauth 2.0, single sign on, throttling of API calls and security</li>
             <li>Implemented a new feature called shared flow which improved the code management in the API team and deployed it using Grunt.js and contributed to Apigee’s open source project which has hundreds of weekly downloads <a href="https://github.com/rajkukadia/generator-apigee-deploy-grunt-api">GitHub repo</a></li>
             <li>Implemented pagination of an API call that gets huge number of JSON documents to improve the performance by 10 seconds per call </ul>
-    <br>
-        <h4 style="color:white;">College of Computer and Information Science, Northeastern University</h4>
+            <br>
+
+        <h4 style="color:white;">Android Developer (Research Assistant), College of Computer and Information Science, Northeastern University</h4>
         <h6 style="color:white;">Boston, MA (Jan 2018 - Aug 2018)</h6>
         <ul style="color:white;">
             <li>Worked on a storytelling, health and fitness android app which is connected to Fitbit and motivates the user to exercise</li>
             <li>Designed the firebase database and API structure that can be used to efficiently store and retrieve user data like user’s current exercising task, the task period, number of steps completed and the story book status</li>
             <li>Created multiple Java classes that syncs user data between shared preferences, REST server and firebase database</li>
-            <li>Developed an open source library that can be used for detailed user tracking using firebase in any android app </li>
-            <li><a href="https://github.com/rajkukadia/user_logging">GitHub repo</a></li>
+            <li>Developed an open source library that can be used for detailed user tracking using firebase in any android app <a href="https://github.com/rajkukadia/user_logging">GitHub repo</a></li>
         </ul>
     </div>
     <button class="collapsible">Projects</button>
@@ -66,14 +68,57 @@
             <iframe allowfullscreen
                     src="https://www.youtube.com/embed/1K1KsXqpf0Y">
             </iframe>
-        </div>
-        <button class="collapsibleTwo">Java</button>
-        <div class="content">
-            <h4 style="color:white;">Northeastern University</h4>
-            <h6 style="color:white;">Boston, MA (Mar 2017 - Apr 2017)</h6>
+            <br>
+            <br>
+            <h4 style="color:white;">Paint App</h4>
+            <h5 style="color:white;">Personal Project</h5>
+            <h6 style="color:white;">Boston, MA (Feb 2019)</h6>
             <ul style="color:white;">
+                <li>Developed a Paint app with MVVM architecture and features like selecting colors, stroke width, undo/redo and drawing shapes</li>
+                <li>Integrated feature to execute the aforementioned actions with shake and voice commands</li>
+                <li><a href="https://github.com/rajkukadia/PaintApp">GitHub repo</a></li>
+            </ul>
+            <br>
+            <br>
+            <h4 style="color:white;">Weather App</h4>
+            <h5 style="color:white;">Personal Project</h5>
+            <h6 style="color:white;">Boston, MA (Aug 2018)</h6>
+            <ul style="color:white;">
+                <li>Created an Android app to show the weather condition depending on the city you enter</li>
+                <li><a href="https://github.com/rajkukadia/whats-the-weather">GitHub repo</a></li>
+            </ul>
+            <br>
+            <br>
+            <h4 style="color:white;">Sum Game</h4>
+            <h5 style="color:white;">Personal Project</h5>
+            <h6 style="color:white;">Boston, MA (Aug 2018)</h6>
+            <ul style="color:white;">
+                <li>Developed a basic Android sum game that tests and improves user's math</li>
+                <li><a href = "https://github.com/rajkukadia/Brain-Trainer">GitHub repo</a></li>
             </ul>
         </div>
+        <br>
+        <button class="collapsibleTwo">Java</button>
+        <div class="content">
+        <h4 style="color:white;">Crowd sourcing app</h4>
+            <h5 style="color:white;">Northeastern University</h5>
+            <h6 style="color:white;">Boston, MA (Nov 2017 - Dec 2017)</h6>
+            <ul style="color:white;">
+                <li>Created a platform for startups to do business with another startup or entity</li>
+                <li>Project Architecture: Angular, 3 Tier Architecture (Controller, Business, Data) REST, Spring, Hibernate, MySql</li>
+                <li>Defined and implemented various roles like admin, business owner and customer</li>
+                <li>Designed the database so that there is efficiency in all the queries made by admin, business owner or customer</li>
+            </ul>
+            <br>
+            <br>
+            <h4 style="color:white;">Network analyzer</h4>
+            <h5 style="color:white;">Northeastern University</h5>
+            <h6 style="color:white;">Boston, MA (Nov 2017 - Dec 2017)</h6>
+            <ul style="color:white;">
+                <li>Built an application with Java that captures and analyzes internet packets to determine the network protocols and IP addresses being used based on any selected network interface</li>
+                <li>Pivotal concepts: Encapsulation, Polymorphism, Abstraction, Association, Swing, Multithreading </li>
+            </ul>
+    </div>
     </div>
     <button class="collapsible">Education</button>
     <div class="content">
@@ -88,7 +133,6 @@
     <div class="content">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
-
 </section>
 
 <script>
@@ -123,6 +167,29 @@
             }
         });
     }
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript">
+
+    $(function() {
+
+        var documentEl = $(document),
+            fadeElem = $('.fade-scroll');
+
+
+        documentEl.on('scroll', function() {
+            var currScrollPos = documentEl.scrollTop();
+
+            fadeElem.each(function() {
+                var $this = $(this),
+                    elemOffsetTop = $this.offset().top;
+                if (currScrollPos > elemOffsetTop) $this.css('opacity', 1 - (currScrollPos-elemOffsetTop)/400);
+            });
+        });
+
+    });
+
 </script>
 
 </body>
