@@ -7,7 +7,11 @@ console.log(path.join(__dirname,'../public'));
 app.use(express.static(path.join(__dirname,'../public')));
 
 app.get('/', function(req, res){
-res.send('Hello world');
+    res.sendFile(path.join(__dirname, '../public/index.html'));
+});
+
+app.get('/about', function(req, res){
+    res.sendFile(path.join(__dirname, '../public/about.html'));
 });
 
 app.listen(port, function(){
